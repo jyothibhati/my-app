@@ -1,25 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+import InputElement from "./InputElement";
+import HeadingElement from "./HeadingElement";
+import "./App.css";
 
-function App() {
+
+//import React from "react"; for class component
+
+//using functional component
+function MyFirstApp() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="my-app">
+
+     <HeadingElement title={"Login Form"} />
+     <InputElement type={"text"} placeholder={"Enter your name"}/> <br />  
+     <InputElement type={"password"} placeholder={"Enter your password"}/> <br />
+     <InputElement type={"email"} placeholder={"Enter your email"}/> <br />  
+     <InputElement type={"phonenumber"} placeholder={"Enter your phonenumber"}/> <br />
+
+     <button type="submit">Submit your details</button>
+
+
+     </div>
+
   );
+
 }
 
-export default App;
+//  {/* <input type="text" placeholder="Enter your name" /> <br />
+//      <br />
+
+//      <input type="password" placeholder="Enter your password" /> <br /> */}
+
+// example of using class component
+
+// class MyFirstApp extends React.component{
+//   cunstructor(props){
+//     super(props)
+//   }
+// }
+
+// render(){
+//   return(
+//     <div className="my-app">
+//        <input type="text" placeholder="Enter your name" /> <br />
+//      <br />
+
+//      <input type="password" placeholder="Enter your password" /> <br />
+
+//      <button type="submit">Submit your details</button>
+
+//     </div>
+//   );
+// }
+
+export default MyFirstApp;
+  
