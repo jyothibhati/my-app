@@ -3,6 +3,7 @@ import NumberDivisible from "./NumberDivisible";
 import Calculator from "./Calculator";
 import React from 'react';
 import Dashboard from "./Dashboard";
+import FormValidation from "./FormValidation";
 
 
 
@@ -10,6 +11,8 @@ function AppRouter() {
          return( <Router>
             <Routes>
               <Route path="/dashboard" element={<Dashboard/>} />
+
+            <Route path="/dashboard/formvalidation" element={<FormValidation/>}/> 
             <Route path="/dashboard/divisible" element={<NumberDivisible />}/>
             <Route path="/dashboard/calculator" element={<Calculator />}/>
             </Routes>
