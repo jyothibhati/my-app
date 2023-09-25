@@ -38,8 +38,9 @@ function Calculator() {
     return(
         <div>
             <input type="text" placeholder="enter number one" onChange={handleNumberInput} />
-            <br />
+            <br /><br/>
             <input type="text" placeholder="enter number two" onChange={handleSecondNumberInput} />
+            <br/>
             <br/>
 
             <button onClick={() =>performOperation("+")} >Add</button><br/>
